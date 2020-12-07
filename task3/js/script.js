@@ -3,7 +3,8 @@ const trafficLightEl = document.querySelector('#trafficLight'),
       green = document.querySelector('.traffic-light__green'), 
       yellow = document.querySelector('.traffic-light__yellow'),
       red = document.querySelector('.traffic-light__red'),
-      auto = document.querySelector('.road img');
+      auto = document.querySelector('.road img:last-child'), 
+      auto2 = document.querySelector('.road img:nth-child(2)');
 
 
 function makeGreen() {
@@ -42,7 +43,7 @@ function hangEvent () {
 
 function turnGreen () {
     green.style.background = 'green';
-    auto.classList.add('drive');
+    auto2.classList.add('drive2');
     blockTrafficLight.removeEventListener('click', turnGreen);
     blockTrafficLight.addEventListener('click', turnYellow);
 }
@@ -57,7 +58,7 @@ function turnYellow () {
 function turnRed () {
     red.style.background = 'red';
     yellow.style.background = 'black';
-    auto.classList.remove('drive');
+    auto2.classList.remove('drive2');
     blockTrafficLight.removeEventListener('click', turnRed);
     blockTrafficLight.addEventListener('click', hangEvent);
 }

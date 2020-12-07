@@ -14,19 +14,41 @@
     background: black;
   }
 .road {
+  display: flex;
+  align-items: center;
   position: relative;
   background: #5c5c5c;
   margin: 3em 0 0 0;
   height: 300px;
 }
-.road img {
+.road ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style: none;
+}
+.road ul li {
+  width: 100px;
+  height: 20px;
+  background: #fff;
+}
+.road img:nth-child(2) {
+  width: 550px;
+  position: absolute;
+  top: -20%;
+  left: -550px;
+}
+.road img:last-child {
   width: 500px;
   position: absolute;
-  top: 10%;
+  top: 23%;
   left: -500px;
 }
+.drive2 {
+  animation: speed 5s infinite ease-in;
+}
 .drive {
-  animation: speed 2s infinite ease-in 0s;
+  animation: speed 1.5s infinite ease-in;
 }
 @keyframes speed {
   0% {
