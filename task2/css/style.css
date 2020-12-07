@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper-block {
+    display: flex;
+    height: 100vh;
+}
+.wrapper-block > div {
+    width: 50%;
+}
+.wrapper-block__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper-block__content {
+    width: 70%;
+}
+.wrapper-block__content h1 {
+    font-size: 2.2em;
+    margin: 0 0 1em 0;
+}
+.wrapper-block__content > p {
+    font-weight: 900;
+    position: relative;
+    margin: 0 0 0.2em 0;
+}
+.wrapper-block__content > p::after {
+    content: '< Нажать />';
+    font-size: 0.7em;
+    font-weight: 400;
+    padding: 4px 8px;
+    margin: 0 0 0 0.8em;
+    background: #e8deae;
+    border-radius: 7px;
+}
+code {
+    display: block;
+    margin: 0 0 2em 0;
+}
+.wrapper-block__right {
+    background: url(../img/computer.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.traffic-light {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#trafficLight, .traffic-light__circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: black;
+  }
+.road {
+  position: relative;
+  background: #5c5c5c;
+  margin: 3em 0 0 0;
+  height: 300px;
+}
+.road img {
+  width: 500px;
+  position: absolute;
+  top: 10%;
+  left: -500px;
+}
+.drive {
+  animation: speed 2s infinite ease-in 0s;
+}
+@keyframes speed {
+  0% {
+    position: absolute;
+    left: -500px;
+  }
+  100% {
+    position: absolute;
+    left: 100%;
+  }
+}
