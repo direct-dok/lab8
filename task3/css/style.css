@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap');
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 .traffic-light {
   display: flex;
   justify-content: space-evenly;
+}
+.traffic-light > div h2 {
+  font-weight: 900;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #4f4f4f;
+  margin: 1em 0;
 }
 
 #trafficLight, .traffic-light__circle {
